@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+		<title>A Simple App</title>
+		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css"> 
+		<link href="stylesheets/style.css" rel="stylesheet" type="text/css"> 
+	</head>
+	<body data-ng-app ="simpleApp">
+		
+		<header>
+			<div class="container-header">
+				<h1>Comments</h1>
+				<h2>A simple app that allows a user to input comments</h2>
+			</div>
+		</header>
+		
+		<main ng-controller="control">
+          		<!-- note that we use a dash here for our CSS class name
+               	that contains multiple words, that's a CSS convention -->
+            <div class="container">   
+				<section class="comment-input"> 
+		
+					<p>Add your Comment:</p>
+					<input type="text" ng-model="inputComment" ng-keypress ="key($event)"><button ng-click="sendComment()">+</button>
+		
+				</section>
+				<section class="comments" ng-repeat="c in comments track by $index">	
+					<p>{{c}}</p> 
+        		</section>
+        	</div>
+        </main>
+        
+        <footer>
+        	<p>this work is released into the public domain</p>
+        </footer>
+
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script src="javascripts/app.js"></script> 
+		
+		<script src ="javascripts/angular.min.js" ></script>
+	</body>
+</html>

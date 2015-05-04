@@ -1,0 +1,95 @@
+body {
+	width: 855px;
+	margin: auto;
+	background-color: #FFFFCC;
+}
+
+header {
+	overflow: auto;
+	border-bottom: 1.5px solid #3399CC;
+	margin-top: 5px;
+}
+
+header h1 {
+	float: left;
+	width: 280px;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+header h2 {
+	float: right;
+	width: 565px;
+	font-size: 1.1em;
+	font-style: italic;
+	margin-top: 5px;
+	
+}
+
+main {
+
+	overflow: auto;
+}
+
+.container {
+	margin-top: 30px;
+}
+
+.comment-input {
+	width: 280px;
+	float: left;
+	
+}
+
+.comment-input input {
+	height: 25px;
+	width: 200px;
+}
+
+
+.comment-input button {
+	margin-left: 5px;
+	height: 32px;
+	width: 17px;
+	background-color: #73B72C;
+	color: white;
+	border-radius: 3px;
+}
+
+.comment-input button:hover { 
+	cursor: pointer;
+}
+
+
+.comments {
+	float: right;
+	width: 565px;
+}
+
+.comments p {
+	margin-bottom: 5px;
+	padding: 5px;
+	border-radius: 4px;
+}
+
+section > p {
+	margin-bottom: 5px;
+}
+
+.comments p:nth-child(even) {
+	background: lavender;
+}
+
+.comments p:nth-child(odd) {
+	background: gainsboro;
+}
+
+footer {
+	margin-top: 30px;
+	border-top: 1.5px solid #3399CC;
+}
+
+footer p {
+	margin-top: 5px;
+}
+

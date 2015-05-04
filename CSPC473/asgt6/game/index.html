@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bruna's Game! :D</title>
+    <meta charset="UTF-8">
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="javascripts/app.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+    </header>
+
+    <main>
+      <div> 
+        <form id="formId">
+          <fieldset>
+            <legend>Choose your move!</legend>
+            <select id="myselect">
+              <option value="rock">rock</option>
+              <option value="paper">paper</option>
+              <option value="scissors">scissors</option>
+              <option value="spock">spock</option>
+              <option value="lizard">lizard</option>
+            </select>
+            <button type="button">Submit</button>
+            </fieldset>
+        </form>
+      </div>
+      <div class="output">
+        <p></p>
+        <table>
+          <tr id="wins">
+            <td></td>
+            <td></td>
+          </tr>
+          <tr id="ties">
+            <td></td>
+            <td></td>
+          </tr>
+          <tr id="losses">
+            <td></td>
+            <td></td>
+          </tr>
+          <tr id="lastOutcome">
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+    
+  </body>
+</html>
